@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TennTrade - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        header { margin-bottom: 20px; }
+        input[type="password"] { padding: 10px; font-size: 16px; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-placeholder.png" alt="TennTrade Logo" style="max-width: 200px;"><br>
+        <p>Phone: (901) 625-1969 | Email: tenntradeprep@gmail.com</p>
+    </header>
+    <h1>Welcome to TennTrade</h1>
+    <p>This site is for authorized funeral homes only. Please enter your 4-digit PIN to continue.</p>
+    <input type="password" id="pin" maxlength="4" placeholder="Enter PIN">
+    <button onclick="login()">Login</button>
+    <div style="margin-top: 40px;">
+        <h2>How to Use the Site</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script>
+        function login() {
+            const pin = document.getElementById('pin').value;
+            if (pin === "1234") {
+                window.location.href = "client-1234.html";
+            } else {
+                alert("Invalid PIN");
+            }
+        }
+    </script>
+</body>
+</html>
