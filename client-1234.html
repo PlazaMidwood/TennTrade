@@ -1,19 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>TennTrade Dashboard</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        header { margin-bottom: 20px; }
-        a { display: block; margin: 10px; font-size: 18px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background-color: lightblue;
+        }
+        header { 
+            margin-bottom: 20px; 
+        }
+        a { 
+            display: block; 
+            margin: 10px; 
+            font-size: 18px; 
+        }
+        hr {
+            width: 80%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .welcome-text {
+            font-size: 36px; /* Double the font size */
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="6B655A80-9473-42E5-AF61-D9C69B9F2F95.png" alt="TennTrade Logo" style="max-width: 200px;"><br>
-        <p>Welcome, Serenity Funeral Home</p>
+        <img src="6B655A80-9473-42E5-AF61-D9C69B9F2F95.png" alt="TennTrade Logo" style="max-width: 200px;">
+        <hr>
+        <p class="welcome-text">Welcome, Serenity Funeral Home</p>
     </header>
     <h1>Client Dashboard</h1>
     <a href="YOUR_FORM_LINK" target="_blank">Request Our Services</a>
@@ -21,5 +44,9 @@
     <a href="https://cash.app/$YOURCASHAPP" target="_blank">Payment Portal</a>
     <br><br>
     <button onclick="window.location.href='logout.html'">Log Out</button>
+    
+    <footer>
+        <p>&copy; 2025 Plaza Midwood Companies</p>
+    </footer>
 </body>
 </html>
